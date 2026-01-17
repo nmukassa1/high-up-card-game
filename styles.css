@@ -1,0 +1,65 @@
+* { margin: 0; box-sizing: border-box; }
+body { min-height: 100svh; }
+
+.wrapper{
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 48px);
+}
+
+.game{
+  width: min(1220px, 100%);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: clamp(16px, 3vw, 48px);
+}
+
+/* top labels */
+.players{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 clamp(8px, 2vw, 24px);
+  font-size: clamp(18px, 2vw, 32px);
+}
+
+/* 3-column board */
+.playfield{
+  display: grid;
+  grid-template-columns: 1fr minmax(260px, 460px) 1fr;
+  align-items: center;
+  gap: clamp(16px, 3vw, 56px);
+}
+
+/* left/right score areas */
+.score{
+  display: grid;
+  place-items: center;
+  min-height: clamp(260px, 45vh, 560px);
+}
+
+.tally{
+  font-size: clamp(80px, 10vw, 180px);
+  line-height: 0.8;
+  letter-spacing: 6px;
+}
+
+/* center stack (canvas + button) */
+.center{
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+
+canvas{
+  width: 100%;
+  aspect-ratio: 3 / 4;          /* matches the tall grey rectangle vibe */
+  display: block;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.deal{
+  padding: 10px 26px;
+  font-size: 18px;
+}

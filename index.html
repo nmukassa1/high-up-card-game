@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Up Card Game | Ny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+      <div class="game">
+        <header class="players">
+          <div class="player-name">Player 1</div>
+          <div class="player-name">Player 2</div>
+        </header>
+  
+        <section class="playfield">
+          <aside class="score score--left" aria-label="Player 1 score">
+            <!-- later: render tally marks here (HTML or canvas) -->
+            <div class="tally">||||\</div>
+          </aside>
+  
+          <div class="center">
+            <canvas id="game-canvas"></canvas>
+            <button class="deal" id="deal-btn">Deal</button>
+          </div>
+  
+          <aside class="score score--right" aria-label="Player 2 score">
+            <div class="tally">|||</div>
+          </aside>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
