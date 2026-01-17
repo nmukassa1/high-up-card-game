@@ -17,7 +17,11 @@
         <section class="playfield">
           <aside class="score score--left" aria-label="Player 1 score">
             <!-- later: render tally marks here (HTML or canvas) -->
-            <div class="tally">||||\</div>
+            <div class="tally-container tally-container-player-1">
+              <div class="tally"></div>
+              <div class="tally"></div>
+              <div class="tally"></div>
+            </div>
           </aside>
   
           <div class="center">
@@ -26,7 +30,13 @@
           </div>
   
           <aside class="score score--right" aria-label="Player 2 score">
-            <div class="tally">|||</div>
+            <div class="tally-container tally-container-player-1">
+              <div class="tally"></div>
+              <div class="tally"></div>
+              <div class="tally"></div>
+              <div class="tally"></div>
+              <div class="tally tally-diagonal"></div>
+            </div>
           </aside>
         </section>
       </div>
